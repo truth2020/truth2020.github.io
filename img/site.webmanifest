@@ -1,0 +1,19 @@
+{
+    "name": "Reply.FYI",
+    "short_name": "Reply.FYI",
+    "icons": [
+        {
+            "src": "/img/android-chrome-192x192.png?v=kP3yGbLOwe",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/android-chrome-512x512.png?v=kP3yGbLOwe",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
