@@ -1,6 +1,6 @@
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("CNAME");
+  //eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addShortcode("maincss", function (test) {
     var fs = require('fs');
