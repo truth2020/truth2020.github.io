@@ -6,7 +6,7 @@ before_script:
 script: eleventy
 deploy:
   local-dir: dist
-  branch: master
+  target_branch: master
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
