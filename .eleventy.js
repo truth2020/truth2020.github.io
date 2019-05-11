@@ -3,9 +3,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addShortcode("maincss", function (test) {
-    var fs = require('fs');
-    var rootPath = process.cwd();
-    var filePath = path.join(rootPath, "main.css");
+    const path = require('path');
+    const fs = require('fs');
+    const filePath = path.join(process.cwd(), "main.css");
     if (fs.existsSync(filePath)) {
       var buffer = fs.readFileSync(filePath).toString();
     }
