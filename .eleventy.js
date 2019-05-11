@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("maincss", function (test) {
     var fs = require('fs');
     var path = process.cwd();
-    var filePath = path + "\\main.css";
+    var filePath = path.join(path, "\\main.css");
     if (fs.existsSync(filePath)) {
       var buffer = fs.readFileSync(filePath).toString();
     }
