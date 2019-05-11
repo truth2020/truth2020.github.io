@@ -1,0 +1,14 @@
+---
+layout: base.html
+title: Bad Arguments
+permalink: bad-arguments/index.html
+---
+<main>
+    <div class="content">
+        {%- for badargument in collections.badargument -%}
+        <h2><a href="{{badargument.url}}">{{ badargument.data.title }}</a></h2>
+        {{ badargument.templateContent | safe }}
+        <hr />
+        {%- endfor -%}
+    </div>
+</main>

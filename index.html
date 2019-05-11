@@ -4,10 +4,6 @@ title: The Truth 2020
 ---
 <main>
     <div class="content">
-        {%- for badargument in collections.badargument -%}
-        <h2><a href="{{badargument.url}}">{{ badargument.data.title }}</a></h2>
-        {{ badargument.templateContent | safe }}
-        <hr />
-        {%- endfor -%}
+        <h2><a href="/bad-arguments">Bad Arguments</a></h2>
     </div>
 </main>
