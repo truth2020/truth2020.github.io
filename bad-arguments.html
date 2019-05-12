@@ -1,14 +1,12 @@
 ---
-layout: base.html
+layout: page.html
 title: Bad Arguments
 permalink: bad-arguments/index.html
 ---
-<main>
-    <div class="content">
-        {%- for badargument in collections.badargument -%}
-        <h2><a href="{{badargument.url}}">{{ badargument.data.title }}</a></h2>
-        {{ badargument.templateContent | safe }}
-        <hr />
-        {%- endfor -%}
-    </div>
-</main>
+<h1>Bad Argument Lint</h1>
+<p>If you see someone making a bad argument, you can link to any of the specific arguments on this page.</p>
+{%- for badargument in collections.badargument -%}
+<h2><a href="{{badargument.url}}">{{ badargument.data.title }}</a></h2>
+{{ badargument.templateContent | safe }}
+<hr />
+{%- endfor -%}
