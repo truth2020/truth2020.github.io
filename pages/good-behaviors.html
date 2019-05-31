@@ -1,0 +1,14 @@
+---
+layout: page.html
+title: Good Behaviors
+permalink: good-behaviors/index.html
+---
+<h1>Good Behaviors List</h1>
+<p>If you see someone being good, you can link to any of the specific behaviors on this page.</p>
+{%- for tag in collections.good_behavior -%}
+<hr />
+    <div style="display: inline-block; width: 50px; height: 50px;">
+        <amp-img alt="image for {{tag.data.title}}" src="{{tag.data.image}}" width="{{tag.data.image-width}}"
+            height="{{tag.data.image-height}}" layout="responsive">
+    </div><a href="{{tag.url}}">{{ tag.data.title }}</a>
+{%- endfor -%}

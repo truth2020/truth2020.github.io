@@ -2,6 +2,12 @@
 <html amp="amp" lang="en">
 
 <head>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@thetruth2020org" />
+  <meta name="twitter:creator" content="@thetruth2020org" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="{{image}}" />
   <meta charset="utf-8">
   <script async="async" src="https://cdn.ampproject.org/v0.js"></script>
   <script async="async" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -93,6 +99,7 @@
       </div>
       <ul class="topnav">
         <li><a href="/bad-arguments">Bad Arguments</a></li>
+        <li><a href="/good-behaviors">Good Behaviors</a></li>
       </ul>
       <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">MENU</div>
   </header>
@@ -102,6 +109,7 @@
     <ul class="sidebar">
       <li><a href="/">Home</a></li>
       <li><a href="/bad-arguments">Bad Arguments</a></li>
+      <li><a href="/good-behaviors">Good Behaviors</a></li>
     </ul>
   </amp-sidebar>
   {{ content | safe }}
