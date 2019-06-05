@@ -8,4 +8,15 @@ layout: base.html
   </div>
     <h1>{{title}}</h1>
     {{ description }}
+
+    {% if fallacies %}
+    <p>
+      <h2>This tag is related to the following fallacies</h2>
+      <ul>
+	{% for fallacy in fallacies %}
+	<li><a href="{{fallacy}}" target="_blank">{{fallacy}}</a></li>
+	{% endfor %}
+      </ul>
+      </p>
+    {% endif %}
 </div>
