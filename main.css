@@ -138,3 +138,14 @@ ul {
   max-width: 256px;
 }
 
+.contact {
+    float:left;
+}
+
+.ptp-badge {
+    float:right;
+}
+
+.clear {
+    clear:both;
+}
