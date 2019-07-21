@@ -272,8 +272,25 @@ ul {
         <h2>#Truth2020 Fact Checker</h2>
 
 <p>
-  Using the Google Custom Search Engine tool, we have created a special search tool that aggegrates the best fact checking sites out there related to the 2020 U.S. elections.
+  Using the Google Custom Search Engine tool, we have created a special search tool that aggregates the best fact checking sites out there related to the 2020 U.S. elections.
 </p>
+
+<p>
+  <input type="text" id="linkField" style="width: 1px;">
+  <a href="#" onclick="copyQueryLink()">Copy search link to clipboard</a>
+</p>
+
+<script>
+  function copyQueryLink() {
+    var copyText = document.getElementById("linkField");
+    var cseField = document.getElementById("gsc-i-id1");
+    searchTerms = cseField.value
+    copyText.value = "http://www.google.com/cse?oe=utf8&ie=utf8&source=uds&q=" + encodeURI(searchTerms) + "&safe=off&sort=&gl=us&cx=016281586299650035219:m4ovcqd4dbo&start=0"
+    copyText.select();
+    document.execCommand("copy");
+    alert("Link copied");
+  }
+</script>
 
 <script async src="https://cse.google.com/cse.js?cx=016281586299650035219:m4ovcqd4dbo"></script>
 <div class="gcse-search"></div>
